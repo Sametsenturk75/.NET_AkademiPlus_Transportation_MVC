@@ -1,0 +1,23 @@
+﻿@model AkademiPlus_Transportation.Models.TBL_Product
+@{
+    ViewBag.Title = "UpdateProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Ürün Ekle</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.ProductID)
+    <label>Ürün Adı</label>
+    @Html.TextBoxFor(x => x.ProductName, new { @class = "form form-control" })
+    <br />
+    <label>Ürün Boyut Tipi</label>
+    @Html.TextBoxFor(x => x.ProductSizeType, new { @class = "form form-control" })
+    <br />
+    <label>Ürün Boyut</label>
+    @Html.TextBoxFor(x => x.ProductSize, new { @class = "form form-control" })
+    <br />
+    <label>Ürün Açıklaması</label>
+    @Html.TextBoxFor(x => x.ProductDescription, new { @class = "form form-control" })
+    <br />
+    <button class="btn btn-primary">Müşteriyi Ekle</button>
+</form>

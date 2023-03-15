@@ -1,0 +1,23 @@
+﻿@model List<AkademiPlus_Transportation.Models.TBL_About>
+    @foreach (var item in Model)
+    {
+<section class="w3l-grids-3 py-5" id="about">
+    <div class="container py-md-5 py-3">
+        <div class="row w3home-ab-grids">
+            <div class="w3ab-right-top col-lg-6 pe-lg-5">
+                <img src="@item.AboutImage" alt="" class="img-fluid radius-image">
+            </div>
+            <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
+                <h6 class="title-subw3hny mb-1">@item.SmallTitle</h6>
+                <h3 class="title-w3l mb-2">@item.LargeTitle</h3>
+                <p class="my-3">
+                    @item.AboutContent
+                </p>
+
+                <a href="about.html" class="btn btn-style btn-primary mt-4">Daha Fazlasını Gör</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+    }

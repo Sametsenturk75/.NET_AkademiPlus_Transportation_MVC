@@ -1,0 +1,24 @@
+﻿@model AkademiPlus_Transportation.Models.TBL_Customer
+@{
+    ViewBag.Title = "AddCustomer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Müşteri Girişi</h2>
+
+<form method="post">
+    <label>Müşteri Adı</label>
+    @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+    <br />
+    <label>Müşteri Soyadı</label>
+    @Html.TextBoxFor(x => x.CustomerSurname, new { @class = "form-control" })
+    <br />
+    <label>Müşteri Şehri</label>
+    @Html.TextBoxFor(x => x.CustomerCity, new { @class = "form-control" })
+    <br />
+    <label>Müşteri Telefon</label>
+    @Html.TextBoxFor(x => x.CustomerPhone, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Müşteriyi Ekle</button>
+
+</form>
