@@ -1,6 +1,11 @@
 # `AkademiPlus_Transportation_Mvc`
  Akademi Plus Eğitiminde uyguladığımız ilk projem. Bir kargo firmasının genel hatlar anlamında tamamen dinamik şekilde yazılmış bir Mvc projesi.
  
+ Projenin Detaylı Videosu  ;   https://www.youtube.com/watch?v=fwaeNwzUl1o
+ 
+ Linkedin Hesabım  ;           https://www.linkedin.com/in/sametsenturk/
+ 
+ 
  ## Kullandığım Özellikler
  - Entity Framework, DbFirst
  - Linq Sorgular
